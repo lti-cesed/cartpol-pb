@@ -1,0 +1,20 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">consultas</h3>
+    </div>
+
+    <table data-toggle="table" data-cache="false" data-height="299" class="table table-bordered table-hover" id="table_bos">
+      <thead class="topoTabelaConsulta">
+        <tr>
+          <th data-field="id" style='text-align: center'>Id</th>
+          <th data-field="data" style='text-align: center'>Data</th>
+          <th data-field="tipo" style='text-align: center'>Tipo</th>
+          <th data-field="versando_sobre" style='text-align: center'>Versando sobre</th>
+          <th data-field="comunicante" style='text-align: center'>Comunicante</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#listaDeBOs person}}{{/listaDeBOs}}
+      </tbody>
+    </table>
+</div><!--/panel-primary-->

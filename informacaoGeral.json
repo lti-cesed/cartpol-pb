@@ -1,0 +1,380 @@
+{
+    "superintendencia":
+                        [
+                            {
+                                "nome"      : "1ª SUPERINTENDÊNCIA REGIONAL DE POLÍCIA CIVIL",
+                                "endereco"  : "Praça Firmino da Silveira, 69 – Varadouro - Centro",
+                                "cep"       : "58107-615",
+                                "cidade"    : "João Pessoa",
+                                "telefone"  : [
+                                    "(83) 3218-5331"
+                                ],
+                                "fax"       : [
+                                    "(83) 3218-5309",
+                                    "(83) 3218-5251"
+                                ],
+                                "dspc": [
+                                    {
+                                        "nome"      : "1ª DELEGACIA SECCIONAL – ZONA NORTE",
+                                        "endereco"  : "Praga Firmino da Silveira, 69, Varadouro - Centro",
+                                        "cep"       : "58107-615",
+                                        "telefone"  : [
+                                            "(83) 3218-5331"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "2ª DELEGACIA SECCIONAL – ZONA SUL",
+                                        "endereco"  : "Praga Firmino da Silveira, 69, Varadouro - Centro",
+                                        "cep"       : "58107-616",
+                                        "telefone"  : [
+                                            "(83) 3218-5332"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "3ª DELEGACIA SECCIONAL DE POLICIA CIVIL",
+                                        "endereco"  : "Rua Ernesto Vital, 34 Monte Castelo, Cabedelo/PB",
+                                        "cep"       : "58310-000",
+                                        "telefone"  : [
+                                            "(83) 3228-6349"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "4ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Pedro Ulisses, 211  Centro - Bayeux/PB",
+                                        "cep"       : "53307-150",
+                                        "telefone"  : [
+                                            "(83) 3232-3339"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "5ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Francisco Gomes Azevedo, 106 – Centro - Santa Rita/PB",
+                                        "cep"       : "58300-390",
+                                        "telefone"  : [
+                                            "(83) 3229-3123",
+                                            "(83) 3229-3187"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "6ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Cônego Fernandes Passos, 287 – Ladeira de Salgadinho - Alhandra/PB",
+                                        "cep"       : "58320-000",
+                                        "telefone"  : [
+                                            "(83) 3256-2385"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "7ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Escritor Oscar Lima Pinto, 18 – Campo - Mamanguape/PB",
+                                        "cep"       : "58280-000",
+                                        "telefone"  : [
+                                            "(83) 3292-2604",
+                                            "(83) 3292-4794"
+                                        ]
+                                    }
+
+                                ]
+                            },
+                            {
+                                "nome"      : "2ª SUPERINTENDÊNCIA REGIONAL DE POLÍCIA CIVIL",
+                                "endereco"  : "Rua Raimundo Nonato de Araújo, S/N - Catolé",
+                                "cep"       : "58410-163",
+                                "cidade"    : "Campina Grande",
+                                "telefone"  : [
+                                    "(83) 3310-9300",
+                                    "(83) 3310-9332",
+                                    "(83) 3310 9334"
+                                ],
+                                "fax"       : [
+                                ],
+                                "dspc": [
+                                    {
+                                        "nome"      : "8ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua José da Cunha Rego, 180 – Centro - Guarabira/PB",
+                                        "cep"       : "58200-000",
+                                        "telefone"  : [
+                                            "(83) 3271-2574",
+                                            "(83) 3271-2986"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "9ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Av. Deputado Adauto Pereira, 278 – Alto Alegre - ltabaiana/PB",
+                                        "cep"       : "58360-000",
+                                        "telefone"  : [
+                                            "(83) 3281-2040",
+                                            "(83) 3281-2509"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "10ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Raimundo Nonato de Araújo, s/n – Catolé - Campina Grande/PB",
+                                        "cep"       : "58410-163",
+                                        "telefone"  : [
+                                            "(83) 3310-9300",
+                                            "(83) 3310-9344"
+                                        ],
+                                        "delegacia" : [
+                                            {
+                                              "nome"     : "1ª DELEGACIA DISTRITAL DE CAMPINA GRANDE",
+                                              "endereco" : "JOSE PINHEIRO - CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                               "nome"     : "2ª DELEGACIA DISTRITAL DE CAMPINA GRANDE",
+                                               "endereco" : "CENTRO - CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "3ª DELEGACIA DISTRITAL DE CAMPINA GRANDE",
+                                                "endereco" : "MONTE SANTO - CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "4ª DELEGACIA DISTRITAL DE CAMPINA GRANDE",
+                                                "endereco" : "MALVINAS - CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "5ª DELEGACIA DISTRITAL DE CAMPINA GRANDE",
+                                                "endereco" : "S.JOSE DA MATA - CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "6ª DELEGACIA DISTRITAL DE CAMPINA GRANDE",
+                                                "endereco" : "CATOLÉ - CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "7ª DELEGACIA DISTRITAL DE CAMPINA GRANDE",
+                                                "endereco" : "CAATINGUEIRA - CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DE CRIMES CONTRA A PESSOA - HOMICIDIOS",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DE ROUBOS E FURTOS - DRF",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DE ATENDIMENTO A MULHER",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DE DEFRAUDAÇÕES E FALSIFICAÇÕES",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DE REPRESSÃO AOS CRIMES CONTRA A INFANCIA E JUVENTUDE",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DE VIGILANCIA GERAL",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA MUNICIPAL DE LAGOA SECA",
+                                                "endereco" : "LAGOA SECA - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA MUNICIPAL DE MASSARANDUBA",
+                                                "endereco" : "MASSARANDUBA - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA MUNICIPAL DE BOA VISTA",
+                                                "endereco" : "BOA VISTA - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DO IDOSO",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DO MEIO AMBIENTE",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DA ORDEM ECONOMICA",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            },
+                                            {
+                                                "nome"     : "DELEGACIA DE REPRESSÃO A ENTORPECENTES",
+                                                "endereco" : "CAMPINA GRANDE - PB"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "11ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua José Braz Franca, 70 – Centro - Queimadas/PB",
+                                        "cep"       : "58475-000",
+                                        "telefone"  : [
+                                            "(83) 3392-2063"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "12ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Napoleão Laureano, s/n – Centro - Esperança/PB",
+                                        "cep"       : "58135-000",
+                                        "telefone"  : [
+                                            "(83) 3361-3295"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "13ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Manoel Lucas, 02 – Centro - Picui/PB",
+                                        "cep"       : "58187-000",
+                                        "telefone"  : [
+                                            "(83) 3371-2324"
+                                        ]
+                                    },
+                                    {
+
+                                        "nome"      : "14ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Maria Salete de Almeida Nunes, 71 – Centro - Monteiro/PB",
+                                        "cep"       : "58500-000",
+                                        "telefone"  : [
+                                            "(83) 3351-2146",
+                                            "(83) 3351-2147"
+                                        ]
+                                    }
+
+                                ]
+                            },
+                            {
+                                "nome"      : "3ª SUPERINTENDÊNCIA REGIONAL DE POLÍCIA CIVIL",
+                                "endereco"  : "Rua Bossuet Wanderley, 257 – Centro",
+                                "cep"       : "58700-410",
+                                "cidade"    : "Patos",
+                                "telefone"  : [
+                                    "(83) 3423-3635"
+                                ],
+                                "fax"       : [
+                                    "(83) 3421-3432"
+                                ],
+                                "dspc": [
+                                    {
+                                        "nome"      : "15ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Bossuet Wanderley, 257 – Centro - Patos/PB",
+                                        "cep"       : "58700-410",
+                                        "telefone"  : [
+                                            "(83) 3423-2553"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "16ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Avenida José Pereira de Lima, s/n Alto da Cascavel - Princesa Isabel/PB",
+                                        "cep"       : "58755-000",
+                                        "telefone"  : [
+                                            "(83) 3457-2381"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "17ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Pinto Madeiro, 59 – Centro - Itaporanga/PB",
+                                        "cep"       : "58780-000",
+                                        "telefone"  : [
+                                            "(83) 3451-3070"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "18ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua lrmã Siegrisida Heinricha, s/n – Tancredo neves - Catolé do Rocha/PB",
+                                        "cep"       : "58884-000",
+                                        "telefone"  : [
+                                            "(83) 3441-2030",
+                                            "(83) 3441-1051"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "12ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Napoleão Laureano, s/n – Centro - Esperança/PB",
+                                        "cep"       : "58135-000",
+                                        "telefone"  : [
+                                            "(83) 3361-3295"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "19ª DELEEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "Rua Sady Fernandes de Aragão, 67 – Areias - Sousa/PB",
+                                        "cep"       : "58081-570",
+                                        "telefone"  : [
+                                            "(83) 3522-1789"
+                                        ]
+                                    },
+                                    {
+                                        "nome"      : "20ª DELEGACIA SECCIONAL DE POLÍCIA CIVIL",
+                                        "endereco"  : "BR-230, Km-511 Fazenda Boi Morto - Cajazeiras/PB",
+                                        "cep"       : "58900-000",
+                                        "telefone"  : [
+                                            "(83) 3531-2948",
+                                            "(83) 3531-6812",
+                                            "(83) 3531-7005"
+                                        ]
+                                    }
+
+                                ]
+                            }
+                        ],
+    "delegado"        :
+                        [
+                            {
+                                "matricula" : 1569066,
+                                "nome"      : "ALBA TANIA ABRANTES CASIMIRO"
+                            },
+                            {
+                                "matricula" : 1564668,
+                                "nome"      : "ELIZABETH REGINA BECKMAN DE SOUZA"
+                            },
+                            {
+                                "matricula" : 1562452,
+                                "nome"      : "ELLEN MARIA FERREIRA DE SOUSA"
+                            },
+                            {
+                                "matricula" : 1331779,
+                                "nome"      : "JOSE EVERALDO ALVES DE MIRANDA"
+                            },
+                            {
+                                "matricula" : 1573195,
+                                "nome"      : "HERTHA DE FRANCA COSTA"
+                            },
+                            {
+                                "matricula" : 1332414,
+                                "nome"      : "JOSEFA ALVES DE ASSIS"
+                            },
+                            {
+                                "matricula" : 1252984,
+                                "nome"      : "JULIO FERREIRA DE LIMA FILHO"
+                            },
+                            {
+                                "matricula" : 773972,
+                                "nome"      : "MARIA MADILEINE DE OLIVEIRA LIMA"
+                            },
+                            {
+                                "matricula" : 1564617,
+                                "nome"      : "MAIRAM MOURA FERREIRA"
+                            },
+                            {
+                                "matricula" : 1559818,
+                                "nome"      : "NERCILIA MARIA QUIRINO DANTAS AGUIAR"
+                            },
+                            {
+                                "matricula" : 769631,
+                                "nome"      : "OSCAR AMANCIO DA SILVA"
+                            },
+                            {
+                                "matricula" : 1560905,
+                                "nome"      : "RUBIA CHRISTIANNI DE FREITAS VIEIRA"
+                            },
+                            {
+                                "matricula" : 743267,
+                                "nome"      : "SEVERINO DE CARVALHO LOPES"
+                            },
+                            {
+                                "matricula" : 1564986,
+                                "nome"      : "SUELANE GUIMARAES SOUTO"
+                            },
+                            {
+                                "matricula" : 1560735,
+                                "nome"      : "FRANCISCO IASLEY LOPES DE ALMEIDA"
+                            },
+                            {
+                                "matricula" : 1560981,
+                                "nome"      : "LAMARTINE LACERDA SOBRINHO"
+                            }
+
+                        ]
+}

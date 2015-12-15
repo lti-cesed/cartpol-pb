@@ -1,0 +1,995 @@
+/* Folha de estilo referente ao sistema da cartpol */
+
+
+/* PADRÃO*/
+
+@font-face
+{
+    font-family:"LATO-REGULAR";
+    src:url("fonts/LATO-REGULAR.ttf"),
+        url("fonts/LATO-REGULAR.eot"),
+        url("fonts/LATO-REGULAR.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face
+{
+    font-family:"LATO-BOLD";
+    src:url("fonts/LATO-BOLD.ttf"),
+        url("fonts/LATO-BOLD.eot"),
+        url("fonts/LATO-BOLD.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face
+{
+    font-family:"LATO-LIGHT";
+    src:url("fonts/LATO-LIGHT.ttf"),
+        url("fonts/LATO-LIGHT.eot"),
+        url("fonts/LATO-LIGHT.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face
+{
+    font-family:"LATO-BLACK";
+    src:url("fonts/LATO-BLACK.ttf"),
+        url("fonts/LATO-BLACK.eot"),
+        url("fonts/LATO-BLACK.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+html{
+      /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#ffffff), to(#EFEFEF));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #ffffff, #EFEFEF);
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #ffffff, #EFEFEF);
+}
+
+
+/* TEMPORÁRIO */
+.progress-bar {
+    background-color: #A6C2E6 !important;
+}
+
+.progress {
+    margin-top: 10px;
+}
+
+.well-lg h1{
+    font: 14px "LATO-BOLD" !important;
+    text-transform: uppercase;
+    color: #666;
+}
+select:first-child,
+option:first-child{
+    color: #666 !important;
+}
+
+input,
+select,
+textarea
+{
+    background: #FAFAFA;
+    border: 1px solid #CCCCCC;
+    font: 14px "LATO-BOLD";
+    text-transform: uppercase;
+    color: #428bca;
+}
+
+.progress-striped .progress-bar, .progress-bar-striped {
+background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+background-image: linear-gradient(45deg, blue 25%, transparent 25%, transparent 50%,#428bca 50%, #428bca 75%, rgba(26, 178, 124, 0) 75%, rgba(216, 14, 14, 0));
+background-size: 40px 40px;
+}
+
+
+
+.panel-title{
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font: 14px "LATO-BLACK";
+    background: #f5f5f5;
+    color: #666;
+    text-transform: uppercase;
+    line-height: 3.5;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.panel-primary>.panel-heading{
+    background-color: #CCCCCC;
+    border-color: #a69f9d;
+}
+.panel-heading {
+    padding: 3px 0px;
+    border-bottom: 0 !important;
+    border-bottom: 0 !important;
+    border-bottom: 0 !important;
+}
+.panel-primary{
+    border-color: #CCC;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    line-height: 2 !important;
+}
+
+.botao-prox{
+    float: right;
+    min-width: 98px;
+    height: 42px;
+    background: #666666;
+    font: 12px "LATO-BOLD";
+    color: white;
+    text-align: center;
+    line-height: 3.5;
+    text-decoration: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin-right: 1%;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: block;
+    z-index: 99999;
+    line-height: 2.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.botao-prox:hover{
+    background: #428bca;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+}
+/*.panel .panel-body #tabs .fragments form input,
+.panel .panel-body #tabs .fragments form select,
+.panel .panel-body #tabs .fragments form textarea
+{
+    float: left;
+    width: 60%;
+    height: 40px;
+    background: #FAFAFA;
+    border: 1px solid #CCCCCC;
+    font: 14px "LATO-BOLD";
+    text-transform: uppercase;
+    color: #428bca;
+    padding-left: 1%;
+    border-radius: 6px;
+    -webkit-borde-radius: 6px;
+    -moz-border-radius: 6px;
+    background: white;
+    margin-bottom: 10px;
+    display: block;
+}*/
+
+
+/************ TEMPORÁRIO ****************************/
+
+.error{
+    color: red;
+    font: 8.5px "LATO-BLACK";
+    padding: 2%;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.centro
+{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+    height:100%;
+}
+
+body{
+  float: left;
+  width: 100%;
+  height: 100%;
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#ffffff), to(#EFEFEF));
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #ffffff, #EFEFEF);
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #ffffff, #EFEFEF);
+}
+
+/********************************* HEADER *************************************/
+
+header.blog-masthead{
+    float: left;
+    width: 100%;
+    height: 122px;
+    background: #EEEEEE;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+        header.blog-masthead #logo-gov{
+            float: left;
+            width: 255px;
+            height: 85px;
+            background: url("../img/css-sprite.png") no-repeat;
+            background-position: 0 0;
+            margin-top: 18px;
+            margin-left: 5px;
+        }
+        header.blog-masthead #logo-policia{
+            float: right;
+            width: 74px;
+            height: 83px;
+            background: url("../img/css-sprite.png") no-repeat;
+            background-position: -256px 0;
+            margin-top: 19px;
+            margin-right: 5px;
+        }
+        
+/******************************** /HEADER *************************************/
+
+
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.botoes-principais {
+  width: 200px;
+  height: 100px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #428bca;
+  color: white;
+  cursor:pointer;
+}
+
+.form-group {
+  margin: 0;
+  padding: 1px;
+}
+
+/**************************** CONTENT GENERAL *********************************/
+
+.content-general{
+    float: left;
+    width: 100%;
+    min-height: 448px;
+    margin-bottom: 15%;
+    
+}
+    .cartpol_content {
+        margin: 50px 0 50px 0;
+        border: 1px solid #d1d1d1;
+        -webkit-box-shadow: 0px 9px 20px 0px rgba(48, 64, 51, 0.61);
+        -moz-box-shadow:    0px 9px 20px 0px rgba(48, 64, 51, 0.61);
+        box-shadow:         0px 9px 20px 0px rgba(48, 64, 51, 0.61);
+    }
+        
+/* ------- LOGIN  ------- */
+.box-intro{
+    width: 43.67%;
+    min-height: 392px;
+    margin: 0 auto;
+    display: block;
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#ffffff), to(#EFEFEF));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #ffffff, #EFEFEF);
+    /* Firefox 3.6+ */
+    border: 1px solid #d1d1d1;
+    background: -moz-radial-gradient(circle, #ffffff, #EFEFEF);
+    -webkit-box-shadow: 0px 9px 20px 0px rgba(48, 64, 51, 0.61);
+    -moz-box-shadow:    0px 9px 20px 0px rgba(48, 64, 51, 0.61);
+    box-shadow:         0px 9px 20px 0px rgba(48, 64, 51, 0.61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-top: 40px;
+}
+        .box-intro h3.panel-title{
+            float: left;
+            width: 100%;
+            text-align: center;
+            font: 29px "LATO-BLACK";
+            text-transform: uppercase;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .box-intro #login_form{
+            float: left;
+            width: 80%;
+            margin-left: 10%;
+            font: 14px "LATO-REGULAR";
+        }
+                .box-intro #login_form .form-control{
+                    float: left;
+                    width: 98%;
+                    height: 64px;
+                    border: 1px solid #CCCCCC;
+                    background: #FFFFFF;
+                    border-radius: 6px;
+                    -webkit-border-radius: 6px;
+                    -moz-border-radius: 6px;
+                    padding-left: 2%;
+                    font: 14px "LATO-REGULAR";
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                }
+                .box-intro #login_form .form-control:focus{
+                    -webkit-box-shadow: 0px 5px 10px 0px rgba(48, 64, 51, 0.61);
+                    -moz-box-shadow:    0px 5px 10px 0px rgba(48, 64, 51, 0.61);
+                    box-shadow:         0px 5px 10px 0px rgba(48, 64, 51, 0.61);
+                    -webkit-transition: box-shadow .3s linear;
+                    -moz-transition: box-shadow .3s linear;
+                    -o-transition: box-shadow .3s linear;
+                    -ms-transition: box-shadow .3s linear;
+                    transition: box-shadow .3s linear;
+                }
+                .box-intro #login_form .check{
+                    float: left;
+                    width: 100%;
+                    height: 30px;
+                    margin-bottom: 15px;
+                }
+                .box-intro #login_form button{
+                    margin: 0 auto;
+                    width: 31.1%;
+                    height: 58px;
+                    display: block;
+                    border-radius: 6px;
+                    -webkit-border-radius: 6px;
+                    -moz-border-radius: 6px;
+                    border: 0;
+                    text-transform: uppercase;
+                    font: 16px "LATO-REGULAR";
+                    background: #428bca;
+                    color: white;
+                    cursor: pointer;
+                    line-height: 1;
+                }
+                .box-intro #login_form button:hover{
+                    background: #0F75BC;
+                    -webkit-transition: background .3s linear;
+                    -moz-transition: background .3s linear;
+                    -o-transition: background .3s linear;
+                    -ms-transition: background .3s linear;
+                    transition: background .3s linear;
+                }
+                
+/********************************** /LOGIN *************************************/
+ /* Selecione as informações */
+ .box-select{
+     min-height: 440px;
+ }
+    .box-intro .sub-titulo{
+        float: left;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 4px;
+        font: 14px "LATO-BOLD";
+        color: #666666;
+        margin-bottom: -15px;
+
+    }
+    .box-intro .small-title{
+       float: left;
+       width: 100%;
+       text-align: center;
+       font: 18px "LATO-BLACK";
+       text-transform: uppercase;
+       margin-top: 35px;
+       margin-bottom: 0;
+    }
+    .box-intro .select_info{
+        float: left;
+        width: 80%;
+        margin-left: 10%;
+        font: 14px "LATO-REGULAR";
+    }
+        .box-intro .select_info h2{
+           float: left;
+           width: 100%;
+           text-align: left;
+           font: 12px "LATO-BOLD";
+           text-transform: uppercase;
+           margin-top: 5px;
+           margin-bottom: px;
+        }
+        .box-intro .select_info select{
+           float: left;
+           width: 100%;
+           height: 35px;
+           text-align: left;
+           margin-top: 6px;
+           margin-bottom: 6px;
+           border: 1px solid #CCCCCC;
+           background: #FFFFFF;
+           border-radius: 6px;
+           -webkit-border-radius: 6px;
+           -moz-border-radius: 6px;
+        }
+        .box-intro .select_info select:hover{
+            -webkit-box-shadow: 0px 5px 10px 0px rgba(48, 64, 51, 0.61);
+            -moz-box-shadow:    0px 5px 10px 0px rgba(48, 64, 51, 0.61);
+            box-shadow:         0px 5px 10px 0px rgba(48, 64, 51, 0.61);
+            -webkit-transition: box-shadow .3s linear;
+            -moz-transition: box-shadow .3s linear;
+            -o-transition: box-shadow .3s linear;
+            -ms-transition: box-shadow .3s linear;
+            transition: box-shadow .3s linear;
+            cursor: pointer;
+        }
+        .box-intro .select_info .float-button{
+            float: left;
+            width: 100%;
+        }
+            .box-intro .select_info .float-button button{
+                margin: 0 auto;
+                width: 31.1%;
+                height: 58px;
+                display: block;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                border: 0;
+                text-transform: uppercase;
+                font: 16px "LATO-REGULAR";
+                background: #428bca;
+                color: white;
+                cursor: pointer;
+                margin-bottom: 20px;
+                margin-top: 12px;
+            }
+            .box-intro .select_info .float-button button:hover{
+                background: #0F75BC;
+                -webkit-transition: background .3s linear;
+                -moz-transition: background .3s linear;
+                -o-transition: background .3s linear;
+                -ms-transition: background .3s linear;
+                transition: background .3s linear;
+            }
+ 
+/**********************************  NAV  *************************************/
+
+/* NAV RIGHT */
+
+#status_sistema{
+    float: left;
+    /*width: 65px;*/
+    height: 34px;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    background: white;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    padding: 9.5px;
+}
+        #status_sistema .ball{
+            float: left;
+            width: 8px;
+            height: 8px;
+            margin-top: 3px;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+            -moz-border-radius: 100%;
+        }
+        #status_sistema .on{
+            background: #00A600;
+        }
+        #status_sistema .off{
+            background: #E60000;
+        }
+        #status_sistema small.status{
+            float: left;
+            margin-top: -5px;
+            margin-left: 5px;
+            font: 18px "LATO-REGULAR";
+            color: #666;
+        }
+
+#s-i{
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    font: 31px "LATO-BLACK";
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 28px;
+    position: absolute;
+    color: black;
+    z-index: 1;
+}        
+        
+#usuario{
+    float: right;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font: 14px "LATO-REGULAR";
+    color: #666;
+    margin-top: 7px;
+}
+    #usuario small b{
+        font: 14px "LATO-BLACK";
+        color: #428bca;
+    }
+
+#barra-de-ferramentas{
+    float: left;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    display: block;
+    position: relative;
+}
+
+#menu-topo{
+    float: right;
+    width: 190px;
+    height: 30px;
+    background: #666666;
+    /*margin-top: -29px;*/
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    font: 12px "LATO-BOLD";
+    color: white;
+    display: none;
+}
+    #menu-topo ul{
+        float: left;
+    }
+        #menu-topo ul li{
+            float: left;
+            width: 190px;
+            height: 29px;
+            padding-left: 10px;
+            padding-top: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            line-height: 1.6;
+        }
+        #menu-topo ul li:hover{
+            background: #428bca;
+            transition: background .3s;
+            -webkit-transition: background .3s;
+            -moz-transition: background .3s;
+        }
+#bt-menu{
+    float: right;
+    width: 46px;
+    height: 39px;
+    background: url("../img/css-sprite.png") no-repeat #666666;
+    background-position: -259px -85px;
+    border-radius: 6px;
+    -mor-boder-radius: 6px;
+    -webkit-border-radius: 6px;
+    cursor: pointer;
+    /*margin-top: -35px;*/
+    margin-bottom: 12px;
+    margin-right: 10px;
+    border: 0;
+}
+#bt-menu:hover{
+    background: url("../img/css-sprite.png") no-repeat #428bca;
+    background-position: -259px -85px;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+}
+    
+/* NAV PRINCIPAL */
+
+#menu-principal{
+    float: left;
+    width: 100%;
+    min-height: 105px;
+    margin-top: 15px;
+}
+    #menu-principal ul li{
+        float: left;
+        /*width: 137px;*/
+        width: 123px;
+        min-height: 105px;
+        cursor: pointer;
+        background: #EEEEEE;
+        border: 1px solid #CCCCCC;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #6C6C6C;
+        font: 12px "LATO-BOLD";
+        margin-left: 1.4%;
+        /*margin-right: 2%;*/
+        display: block;
+    }
+    #menu-principal ul li:first-child{
+        margin-left: 0%;
+    }
+    #menu-principal ul li:hover{
+        background: white;
+        -webkit-transition: background .3s linear;
+        -moz-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        -ms-transition: background .3s linear;
+        transition: background .3s linear;
+    }
+    .new-bg{
+        background: white !important;
+    }
+        #menu-principal ul li .icons-nav{
+            margin: 0 auto;
+            height: 49px;
+            display: block;
+            margin-top: 18px;
+            background: url("../img/css-sprite.png") no-repeat;
+            margin-bottom: 5px;
+        }
+        #menu-principal ul li #icon-bo{
+            width: 55px;
+            background-position: 0 -186px;
+        }
+        #menu-principal ul li #icon-tco{
+            width: 55px;
+            background-position: -59px -186px;
+        }
+        #menu-principal ul li #icon-inquerito{
+            width: 45px;
+            background-position: 0px -243px;
+        }
+        #menu-principal ul li #icon-apf{
+            width: 83px;
+            background-position: -228px -188px;
+        }
+        #menu-principal ul li #icon-peca{
+            width: 22px;
+            height: 51px;
+            background-position: -277px -129px;
+        }
+        #menu-principal ul li #icon-consultas{
+            width: 50px;
+            background-position: -114px -186px;
+        }
+        #menu-principal ul li #icon-conf{
+            width: 63px;
+            background-position: -164px -186px;
+        }
+
+/*********************************  /NAV  *************************************/     
+
+/********************************  PRINCIPAL  *********************************/     
+
+#conteudo{
+    float: left;
+    width: 99%;
+    min-height: 410px;
+    background: #EEEEEE;
+    border: 1px solid #E3E3E3;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin-top: 55px;
+}
+
+.botoes{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.form-control{
+    font: 13px "LATO-BOLD";
+    color: #428bca;
+    text-transform: uppercase;
+}
+.panel{
+    float: left;
+    width: 100%;
+    min-height: 410px;
+    margin-bottom: 0;
+}
+    .panel h2.panel-title{
+        float: left;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        font: 14px "LATO-BLACK";
+        color: #428bca;
+        text-transform: uppercase;
+        line-height: 3.5;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+    }
+    .panel .panel-body{
+        float: left;
+        width: 100%;
+        font: 12px "LATO-BLACK";
+        text-transform: uppercase;
+        border-top: 1px solid #ccc;
+        padding-top: 0px;
+    }
+        .panel .panel-body #tabs{
+            float: left;
+            width: 99%;
+        }
+        .panel .panel-body #tabs .fragments{
+            float: left;
+            width: 96%;
+        }
+        .panel .panel-body #tabs .fragments form{
+            float: left;
+            width: 100%;
+        }
+        .panel .panel-body #tabs .fragments .botao-prox{
+            float: right;
+            width: 98px;
+            height: 42px;
+            background: #666666;
+            font: 12px "LATO-BOLD";
+            color: white;
+            text-align: center;
+            line-height: 3.5;
+            text-decoration: none;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            margin-right: 1%;
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+            margin-bottom: 5px;
+            display: block;
+            z-index: 99999;
+        }
+        .panel .panel-body #tabs .fragments .botao-prox:hover{
+            background: #428bca;
+            transition: background .3s;
+            -webkit-transition: background .3s;
+            -moz-transition: background .3s;
+        }
+            .panel .panel-body #tabs .fragments form input,
+            .panel .panel-body #tabs .fragments form select,
+            .panel .panel-body #tabs .fragments form textarea
+            {
+                /*float: left;*/
+                width: 60%;
+                height: 40px;
+                background: #FAFAFA;
+                border: 1px solid #CCCCCC;
+                font: 14px "LATO-BOLD";
+                text-transform: uppercase;
+                color: #428bca;
+                padding-left: 1%;
+                border-radius: 6px;
+                -webkit-borde-radius: 6px;
+                -moz-border-radius: 6px;
+                background: white;
+                margin-bottom: 10px;
+                display: block;
+            }
+            .panel .panel-body #tabs .fragments form select{
+                width: 61.4%;
+                padding-left: 0.5%;
+            }
+            .panel .panel-body #tabs .fragments form textarea{
+                height: 110px;
+                padding-top: 1%;
+            }
+            .panel .panel-body #tabs .fragments form .small-input{
+                width: 110px !important;
+                font: 12px "LATO-BOLD";
+            }
+
+/*******************************  /PRINCIPAL  *********************************/     
+
+
+
+/**************************** /CONTENT GENERAL ********************************/
+
+footer {
+  float: left;
+  width: 100%;
+  height: 73px;
+  bottom: 0;
+  background-color: #f5f5f5;
+  z-index: 22;
+  border-top: 1px solid #dddddd;
+  margin-top: 35px;
+  position: absolute;
+  bottom: 0;
+}
+        footer#footer #logo-cartpol{
+            float: left;
+            width: 104px;
+            height: 24px;
+            background: url("../img/css-sprite.png") no-repeat;
+            background-position: -153px -86px;
+            margin-top: 23px;
+            margin-left: 5px;
+        }
+        footer#footer #logo-facisa-sis{
+            float: right;
+            width: 136px;
+            height: 40px;
+            margin-top: 18px;
+            margin-right: 5px;
+        }
+                footer#footer #logo-facisa-sis #logo-facisa{
+                    float: left;
+                    width: 81px;
+                    height: 40px;
+                    background: url("../img/css-sprite.png") no-repeat;
+                    background-position: 0 -85px;
+                }
+                
+                footer#footer #logo-facisa-sis #logo-sistema{
+                    float: left;
+                    width: 55px;
+                    height: 40px;
+                    background: url("../img/css-sprite.png") no-repeat;
+                    background-position: -96px -85px;
+                }
+                footer#footer #logo-facisa-sis #logo-facisa:hover,
+                footer#footer #logo-facisa-sis #logo-sistema:hover{
+                        opacity:0.6;
+                        -moz-opacity: 0.6;
+                        filter: alpha(opacity=60);
+                        -webkit-transition: opacity .3s linear;
+                        -moz-transition: opacity .3s linear;
+                        -o-transition: opacity .3s linear;
+                        -ms-transition: opacity .3s linear;
+                        transition: opacity .3s linear;
+                }
+
+/******************************** /FOOTER *************************************/
+
+
+
+/********************************** TCO ***************************************/
+
+#botoes_termos{
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+    #botoes_termos #botao_gerar_tc,
+    #botoes_termos #botao_gerar_tr{
+        float: left;
+        margin-right: 0;
+        margin-left: 9%;
+    }
+/********************************** /TCO ***************************************/
+
+
+
+/********************************** APF ***************************************/
+
+#botoes_termos_apf{
+    width: 338px;
+    margin: 0 auto;
+    display: block;
+    float: none;
+}
+    #botoes_termos_apf #botao_gerar_termo_de_fianca,
+    #botoes_termos #botao_gerar_alvara_de_soltura{
+        float: left;
+        margin-right: 0;
+        margin-left: 2%;
+    }
+/********************************** /APF ***************************************/
+
+
+.form-control{
+    width: 98%;
+    padding-left: 2%;
+}
+
+textarea.form-control{
+    width: 99.5%;
+}
+
+select:first-child,
+option:first-child{
+    padding-left: 1%;
+}
+
+
+
+
+/******************************** CONSULTA ************************************/
+
+.dataTables_length{
+    float: left;
+    width: 247px;
+    margin-top: 10px;
+}
+
+    .dataTables_length label{
+        float: left;
+        width: 98%;
+        margin-left: 2%;
+    }
+
+#table_bos_filter{
+    float: right;
+    width: 246px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+    #table_bos_filter input{
+        height: 33px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        margin-right: 0%;
+        margin-left: 10px;
+        padding-left: 5px;
+    }
+.sorting_asc,
+.sorting{
+    text-transform: uppercase;
+    color: #428bca;
+    font-family: "LATO-BOLD";
+}
+.dataTables_info,
+.dataTables_paginate{
+    float: left;
+    width: 98%;
+    margin-left: 2%;
+}
+#table_bos_previous{
+    margin-right: 10px;
+}
+.paginate_button{
+    color: #428bca;
+}
+.paginate_button:hover{
+    cursor: pointer;
+    color: #428bca;
+}
+
+/******************************** CONSULTA ************************************/
+
+
+

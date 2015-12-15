@@ -1,0 +1,420 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Auto de Prisão em Flagrante</h3>
+  </div>
+  <div class="panel-body">
+
+    <!-- Títulos das abas -->
+    <ul class="nav nav-tabs">
+      <li class="active"><a id="tab_infogerais"  href="#infogerais"  data-toggle="tab">Informações Gerais</a></li>
+      <li><a id="tab_comunicante" href="#comunicante" data-toggle="tab">Comunicante</a></li>
+      <li><a id="tab_vitimas"     href="#vitimas"     data-toggle="tab">Vítimas</a></li>
+      <li><a id="tab_testemunhas" href="#testemunhas" data-toggle="tab">Testemunhas</a></li>
+      <li><a id="tab_acusados"    href="#acusados"    data-toggle="tab">Acusados</a></li>
+      <li><a id="tab_objetos"     href="#objetos"     data-toggle="tab">Objetos</a></li>
+      <li><a id="tab_exames"      href="#exames"      data-toggle="tab">Exames</a></li>
+      <li><a id="tab_crime"       href="#crime"       data-toggle="tab">Crime</a></li>
+      <li><a id="tab_concluir"    href="#concluir"    data-toggle="tab">Concluir</a></li>
+    </ul>
+    
+    <!-- Conteúdo das abas -->
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="infogerais">
+        <br/>
+        <div class="row">
+          <div class="form-group">  
+            <label for="inputInfoGeraisVersando" class="col-sm-2 control-label">Boletim versando sobre</label>  
+            <div class="col-sm-10">    
+              <input class="form-control valid" id="inputInfoGeraisVersando" placeholder="Boletim versando sobre" name="inputInfoGeraisVersando" aria-invalid="false">  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">  
+            <label for="inputInfoGeraisDataFato" class="col-sm-2 control-label">Data do fato</label>  
+            <div class="col-sm-3">    
+              <input class="form-control data valid" id="inputInfoGeraisDataFato" placeholder="Data do fato" name="inputInfoGeraisDataFato" aria-invalid="false">  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">  
+            <label for="inputInfoGeraisHoraFato" class="col-sm-2 control-label">Hora do fato</label>  
+            <div class="col-sm-3">    
+              <input class="form-control hora valid" id="inputInfoGeraisHoraFato" placeholder="Hora do fato" name="inputInfoGeraisHoraFato" aria-invalid="false">  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">  
+            <label for="inputInfoGeraisLocalFato" class="col-sm-2 control-label">Local do fato</label>  
+            <div class="col-sm-10">    
+              <input class="form-control valid" id="inputInfoGeraisLocalFato" placeholder="Local do fato" name="inputInfoGeraisLocalFato" aria-invalid="false">  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <div class="col-sm-offset-2 col-sm-10">
+            <a href="#" class="btn btn-success pull-right para_tab_comunicante botao-prox">Próximo</a>
+          </div>
+        </div>
+      </div> 
+
+      <div class="tab-pane fade" id="comunicante">
+        <br/>
+        <form class="form-horizontal" role="form" id="comunicante_form">
+          {{{formularioPessoa "comunicante"}}}
+          {{{campoTexto "historicoComunicante" "Histórico"}}}
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <a href="#" class="btn btn-success pull-right para_tab_vitima botao-prox">Próximo</a>
+              <a href="#" class="btn btn-primary para_tab_infogerais botao-prox">Anterior</a>
+            </div>
+          </div>
+        </form>
+      </div> <!-- Comunicante -->
+
+      <div class="tab-pane fade" id="vitimas">
+        <br/>
+        <div class="row" id="div_tabela_vitimas">
+          <div id="div_zero_vitimas">
+            <h1 style="text-align: center">Não há vítimas cadastradas</h1>
+            <h3 style="text-align: center">Clique no botão Adicionar para incluir uma vítima neste APF.</h3>
+          </div>
+          <table class="table table-hover" id="tabela_vitimas">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+              </tr>
+            </thead>
+            <tbody id="corpo_tabela_vitimas">
+            </tbody>
+          </table>  
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-5">
+            <button class="btn btn-primary botao-prox" id="botao_adicionar_vitima">Adicionar</button>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-10">
+              <a href="#" class="btn btn-success pull-right para_tab_acusado botao-prox">Próximo</a>
+            <a href="#" class="btn btn-primary para_tab_comunicante botao-prox">Anterior</a>
+          </div>
+        </div>
+        
+        <!-- Modal Vítima -->
+        <div class="modal fade" id="modal_vitima" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form class="form-horizontal" role="form" id="vitima_form">
+                  {{{formularioPessoa "vitima"}}}
+                  {{{campoTexto "declarouVitima" "E declarou que"}}}
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary botao-prox" id="botao_salvar_vitima">Salvar</button>
+                <button type="button" class="btn btn-danger botao-prox" id="botao_excluir_vitima">Excluir</button>
+                <button type="button" class="btn btn-default botao-prox" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Modal Vítima -->
+        
+      </div> <!-- Vitimas -->
+      <div class="tab-pane fade" id="testemunhas">
+        <br/>
+        <div class="row" id="div_tabela_testemunhas">
+          <div id="div_zero_testemunhas">
+            <h1 style="text-align: center">Não há testemunhas cadastradas</h1>
+            <h3 style="text-align: center">Clique no botão Adicionar para incluir uma testemunha neste APF.</h3>
+          </div>
+          <table class="table table-hover" id="tabela_testemunhas">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+              </tr>
+            </thead>
+            <tbody id="corpo_tabela_testemunhas">
+            </tbody>
+          </table>  
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-5">
+            <button class="btn btn-primary botao-prox" id="botao_adicionar_testemunha">Adicionar</button>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-10">
+            <a href="#" class="btn btn-success pull-right para_tab_acusado botao-prox">Próximo</a>
+            <a href="#" class="btn btn-primary para_tab_vitima botao-prox">Anterior</a>
+          </div>
+        </div>
+        
+        <!-- Modal Testemunha -->
+        <div class="modal fade" id="modal_testemunha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form class="form-horizontal" role="form" id="testemunha_form">
+                  {{{formularioPessoa "testemunha"}}}
+                  {{{campoTexto "declarouTestemunha" "E declarou que"}}}
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary botao-prox" id="botao_salvar_testemunha">Salvar</button>
+                <button type="button" class="btn btn-danger botao-prox" id="botao_excluir_testemunha">Excluir</button>
+                <button type="button" class="btn btn-default botao-prox" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Modal Testemunha -->
+        
+      </div> <!-- Testemunhas -->
+
+      <div class="tab-pane fade" id="acusados">
+        <br/>
+        <div class="row" id="div_tabela_acusados">
+          <div id="div_zero_acusados">
+            <h1 style="text-align: center">Não há acusados cadastrados</h1>
+            <h3 style="text-align: center">Clique no botão Adicionar para incluir um acusado neste APF.</h3>
+          </div>
+          <table class="table table-hover" id="tabela_acusados">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+              </tr>
+            </thead>
+            <tbody id="corpo_tabela_acusados">
+            </tbody>
+          </table>  
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-5">
+            <button class="btn btn-primary botao-prox" id="botao_adicionar_acusado">Adicionar</button>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-10">
+            <a href="#" class="btn btn-success pull-right para_tab_objeto botao-prox">Próximo</a>
+            <a href="#" class="btn btn-primary para_tab_testemunha botao-prox">Anterior</a>
+            
+          </div>
+        </div>
+        
+        <!-- Modal Acusado -->
+        <div class="modal fade" id="modal_acusado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form class="form-horizontal" role="form" id="acusado_form">
+                  {{{formularioPessoa "acusado"}}}
+                  {{{campoTexto "declarouAcusado" "E declarou que"}}}
+                  {{{campoTexto "seraEncaminhadoAcusado" "Será encaminhado para"}}}
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary botao-prox" id="botao_salvar_acusado">Salvar</button>
+                <button type="button" class="btn btn-danger botao-prox" id="botao_excluir_acusado">Excluir</button>
+                <button type="button" class="btn btn-default botao-prox" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Modal Acusado -->
+        
+      </div> <!-- Acusados -->
+      <div class="tab-pane fade" id="objetos">
+        <br/>
+        <div class="row" id="div_tabela_objetos">
+          <div id="div_zero_objetos">
+            <h1 style="text-align: center">Não há objetos cadastrados</h1>
+            <h3 style="text-align: center">Clique no botão Adicionar para incluir um objeto apreendido nesse APF.</h3>
+          </div>
+          <table class="table table-hover" id="tabela_objetos">
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>Em poder de</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="corpo_tabela_objetos">
+            </tbody>
+          </table>  
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-5">
+            <button class="btn btn-primary botao-prox" id="botao_adicionar_objeto">Adicionar</button>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-10">
+            <a href="#" class="btn btn-success pull-right para_tab_exames botao-prox">Próximo</a>
+            <a href="#" class="btn btn-primary para_tab_acusado botao-prox">Anterior</a>
+            
+          </div>
+        </div>
+        <!-- Modal Objeto Apreendido -->
+        <div class="modal fade" id="modal_objeto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form class="form-horizontal" role="form" id="objeto_form">
+                  {{{formularioObjetoApreendido }}}
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary botao-prox" id="botao_salvar_objeto">Salvar</button>
+                <button type="button" class="btn btn-danger botao-prox" id="botao_excluir_objeto">Excluir</button>
+                <button type="button" class="btn btn-default botao-prox" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Modal Objeto Apreendido -->
+      </div> <!-- Objetos Apreendidos -->
+
+      <!-- Exames -->
+      <div class="tab-pane fade" id="exames">
+          <br/>
+          <div class="row" id="div_tabela_exames">
+              <div id="div_zero_exames">
+                  <h1 style="text-align: center">Não há exames cadastrados</h1>
+                  <h3 style="text-align: center">Clique no botão Adicionar para incluir um exame nesse APF.</h3>
+              </div>
+              <table class="table table-hover" id="tabela_exames">
+                  <thead>
+                  <tr>
+                      <th>Nome</th>
+                      <th>Categoria</th>
+                      <th></th>
+                  </tr>
+                  </thead>
+                  <tbody id="corpo_tabela_exames">
+                  </tbody>
+              </table>
+          </div>
+          <div class="row">
+              <div class="col-md-2 col-md-offset-5">
+                  <button class="btn btn-primary botao-prox" id="botao_adicionar_exame">Adicionar</button>
+              </div>
+          </div>
+          <hr/>
+          <div class="row">
+              <div class="col-sm-offset-2 col-sm-10">
+                  <a href="#" class="btn btn-success pull-right para_tab_crime botao-prox">Próximo</a>
+                  <a href="#" class="btn btn-primary para_tab_objeto botao-prox">Anterior</a>
+              </div>
+          </div>
+
+          <!-- Modal Exame -->
+          <div class="modal fade" id="modal_exame" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-body">
+                          <form class="form-horizontal" role="form" id="exame_form">
+                              {{{formularioExame }}}
+                              <label class="col-sm-2 control-label">Exames</label>
+                              <div class="form-group">
+                                  <div class="col-sm-offset-2 col-sm-10">
+                                      <div class="checkbox" id="inputExameRequisicao">
+                                      </div>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-primary botao-prox" id="botao_salvar_exame">Salvar</button>
+                          <button type="button" class="btn btn-danger botao-prox" id="botao_excluir_exame">Excluir</button>
+                          <button type="button" class="btn btn-default botao-prox" data-dismiss="modal">Cancelar</button>
+                      </div>
+                  </div>
+              </div>
+          </div> <!-- Modal Exame -->
+      </div> <!-- Exames -->
+
+      <div class="tab-pane fade" id="crime">
+          <br/>
+          <form class="form-horizontal" role="form" id="comunicante_form" novalidate="novalidate">
+              <h3 style="text-align: center">
+                  Defina o tipo de crime abaixo.
+              </h3>
+              <br/>
+              <br/>
+              <div class="form-group">
+                  <label for="inputTipoCrime" class="col-sm-4 col-md-offset-0 control-label">Tipo de crime</label>
+                  <div class="col-md-4">
+                      <select class="form-control valid" id="inputTipoCrime" aria-invalid="false">
+                          <option value="">-- Selecionar --</option>
+                          <option value="Afiançável">Afiançável</option>
+                          <option value="Inafiançável">Inafiançável</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="form-group afiancavel" style="display: none">
+                  <label for="inputDespachoConcessivoDaFianca" class="col-sm-4 col-md-offset-0 control-label">Despacho concessivo da fiança</label>
+                  <div class="col-md-4">
+                      <input class="form-control" id="inputDespachoConcessivoDaFianca" placeholder="Despacho concessivo da fiança" name="inputDespachoConcessivoDaFianca">
+                  </div>
+              </div>
+              <div class="form-group afiancavel" style="display: none">
+                  <label for="inputArbitramentoDoValor" class="col-sm-4 col-md-offset-0 control-label">Arbitramento do valor</label>
+                  <div class="col-md-4">
+                      <input class="form-control" id="inputArbitramentoDoValor" placeholder="Arbitramento do valor" name="inputArbitramentoDoValor">
+                  </div>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <div id="botoes_termos_apf" class="col-md-4 col-md-offset-4 afiancavel" style="display: none">
+                  <a href="javascript:void(0)" class="btn btn-primary btn-lg pull-left botao-prox" id="botao_gerar_termo_de_fianca">Termo de fiança</a>
+                  <a href="javascript:void(0)" class="btn btn-success btn-lg pull-right botao-prox" id="botao_gerar_alvara_de_soltura">Alvará de soltura</a>
+              </div><!--/botoes_termos-->
+              <div class="col-md-4 col-md-offset-4 inafiancavel" style="display: none">
+                  <a href="javascript:void(0)" class="btn btn-primary btn-lg pull-left botao-prox" id="botao_gerar_oficio_de_encaminhamento">Ofício de encaminhamento</a>
+              </div>
+          </form>
+          <form class="form-horizontal" role="form">
+              <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                      <a href="#" class="btn btn-success pull-right para_tab_concluir botao-prox">Próximo</a>
+                      <a href="#" class="btn btn-primary para_tab_exames botao-prox">Anterior</a>
+                  </div>
+              </div>
+          </form>
+      </div>
+
+
+      <div class="tab-pane fade" id="concluir">
+        <br/>
+        <div class="row">
+          <h3 style="text-align: center">
+            Para gerar o documento do APF com todos os dados entrados nas abas
+            anteriores clique no botão <strong>Visualizar</strong> abaixo.
+          </h3>
+          <div class="col-md-4 col-md-offset-4">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg pull-left botao-prox" id="botao_gerar_apf">Visualizar</a>
+            <a href="javascript:void(0)" class="btn btn-success btn-lg pull-right botao-prox" id="botao_salvar_apf">Salvar</a>
+          </div>
+        </div>
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <a href="#" class="btn btn-primary para_tab_crime botao-prox">Anterior</a>
+            </div>
+          </div>
+        </form>
+      </div> <!-- Concluir -->
+    </div> 
+  </div> <!-- Tab panes -->
+
+</div>

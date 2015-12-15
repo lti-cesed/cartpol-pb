@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/*========================================================================
+     0px a 1023px
+========================================================================== */
+@media (max-width: 62.500em)
+{
+    #menu-principal ul li{
+        width: 20%;
+        margin-left: 3.8%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #menu-principal ul li:first-child{
+        margin-left: 3.8%;
+    }
+    #menu-principal ul li:last-child{
+        margin-right: 0;
+    }
+    #s-i{
+        display: none;
+    }
+}
+
+/*========================================================================
+     0px a 767px
+========================================================================== */
+@media (max-width: 47.938em)
+{
+    .box-intro h3.panel-title {
+        font: 18px "LATO-BLACK";
+    }
+    .box-intro #login_form button,
+    .box-intro .select_info .float-button button {
+        width: 60%;
+    }
+    
+    .sorting_asc,
+    .sorting{
+       font-size: 10px;
+    }
+}
+/*========================================================================
+     0px a 640px
+========================================================================== */
+@media (max-width: 40.000em)
+{
+    .box-intro{
+        width: 85%;
+    }
+    .panel .panel-body #tabs .fragments form input,
+    .panel .panel-body #tabs .fragments form textarea
+    {
+        width: 98%;
+    }
+    .panel .panel-body #tabs .fragments form select
+    {
+        width: 99.4%;
+    }
+    .ui-tabs{
+        padding:0 !important;
+    }
+    .sorting_asc,
+    .sorting{
+       font-size: 9px;
+    }
+}
+
+/*========================================================================
+     0px a 500px
+========================================================================== */
+@media (max-width: 34.375em)
+{
+    .sorting_asc,
+    .sorting{
+       font-size: 8px;
+    }
+    #menu-principal ul li{
+        float: left;
+        width: 43%;
+        margin-left: 5%;
+    }
+    #menu-principal ul li:first-child{
+        margin-bottom: 10px;
+        margin-left: 5%;
+    }
+    #menu-principal ul li.bt-second{
+        float: right;
+        margin-right: 5%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    #menu-principal ul li:last-child{
+/*        float: right;*/
+        /*margin-right: 5%;*/
+        /*margin-left: 0;*/
+        
+    }
+    
+    
+    #botoes_termos{
+        width: 100%;
+        display: block;
+    }
+        #botoes_termos #botao_gerar_tc,
+        #botoes_termos #botao_gerar_tr{
+            float: left;
+            margin-right: 0;
+            margin-left: 1%;
+        }
+
+    #botoes_termos_apf{
+        width: 100%;
+        display: block;
+    }
+        #botoes_termos_apf #botao_gerar_termo_de_fianca,
+        #botoes_termos #botao_gerar_alvara_de_soltura{
+            float: left;
+            width: 48%;
+            margin-right: 0;
+            margin-left: 1%;
+        }
+}
+/*========================================================================
+     0px a 480px
+========================================================================== */
+@media (max-width: 30.000em)
+{
+    /* Selecione as informações */
+ .box-select{
+     min-height: 475px;
+ }
+}
+
+/*========================================================================
+     0px a 379px
+========================================================================== */
+@media (max-width: 23.688em)
+{
+    header.blog-masthead #logo-gov {
+        width: 180px;
+        height: 60px;
+        background: url("../img/css-sprite.png") no-repeat;
+        background-position: 0 -126px;
+        margin-top: 30px;
+    }
+    header.blog-masthead #logo-policia {
+        width: 50px;
+        height: 56px;
+        background: url("../img/css-sprite.png") no-repeat;
+        background-position: -190px -130px;
+        margin-top: 30px;
+    }
+}
+
+
+/*========================================================================
+     0px a 320px
+========================================================================== */
+@media (max-width: 20.000em)
+{
+}
+
+/*========================================================================
+     0px a 319px
+========================================================================== */
+@media (max-width: 19.938em)
+{
+}
+
+/*========================================================================
+     0px a 240px
+========================================================================== */
+@media (max-width: 15.000em)
+{
+
+}

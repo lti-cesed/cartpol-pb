@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" manifest="cartpol.appcache">
+<!-- <html lang="pt-BR"> -->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Sistema Web para a Polícia Civil"/>
+        <meta name="author" content="LTI - CESED"/>
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+        <title>Polícia Civil - CartPol</title>
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+        <link href="css/reset-min.css" type="text/css" rel="stylesheet"/>
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>
+        <link href="css/responsive.css" type="text/css" rel="stylesheet"/>
+        
+        <!-- TAPS CSS (PRINCIPAL) -->
+        <link href="css/jquery-ui.css" type="text/css" rel="stylesheet"/>
+
+    </head>
+
+    <body>
+      
+        <header class="blog-masthead">
+            <div class="centro">
+                    <div id="logo-gov">
+                    </div><!--/logo-gov-->
+                    
+                    <div id="logo-policia">
+                    </div><!--/logo-policia-->
+            </div><!--/centro-->
+        </header>
+
+        <div class="container fill">
+            <div class="centro">
+                <div class="content-general">
+                        <div class="row" id="main_content">
+                              <div class="well well-lg">
+                                <h1>Aguarde Carregando...</h1>
+                                <div class="progress progress-striped active">
+                                  <div 
+                                    id="main_progress_bar" 
+                                    class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" 
+                                    aria-valuemax="100" style="width: 15%">
+                                      <span class="sr-only">15% Carregando</span>
+                                  </div><!--/main-progress-->
+                                </div> <!--/progress-->               
+                              </div><!--/well-->
+                        </div><!-- /.row -->
+                </div><!--/content-general-->
+            </div><!--/centro-->
+        </div><!-- /.container -->
+
+        <footer id="footer">
+
+            <div class="centro">
+                <div id="logo-cartpol">                
+                </div><!--/logo cartpol-->
+                <div id="logo-facisa-sis">
+                    <a id="logo-facisa" href="http://www.cesed.br/" target="_blank"></a>
+                    <a id="logo-sistema" href="http://www.cesed.br/npsi/" target="_blank"></a>
+                </div><!--/logo-facisa-sis-->
+            </div><!--/centro-->
+            
+        </footer>
+
+        <!-- JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="scripts/lib/base64.js"></script>
+        <script src="scripts/lib/jszip.js"></script>
+        <script src="scripts/lib/docxgen.js"></script>
+        <script data-main="scripts/main" src="scripts/lib/require.js"></script>
+    </body>
+</html>
